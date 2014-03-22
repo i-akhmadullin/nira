@@ -1,0 +1,15 @@
+{
+  "name": "nira",
+  "version": "0.0.1",
+  "description": "node-based task manager",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "Ilya Akhmadullin",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^0.5.1",
+    "koa-logger": "^1.2.0"
+  }
+}
