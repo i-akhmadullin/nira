@@ -1,0 +1,11 @@
+doctype html
+html(lang="en")
+  head
+    title nira task todos
+  body
+    h3 Welcome to Nira - node-based task manager
+    ul
+      each task, index in tasks
+        li
+          div= task.title
+          div= task.text
