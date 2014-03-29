@@ -1,4 +1,14 @@
 
+0.0.4 / 2014-03-29
+==================
+
+ * add simple css, static middleware
+ * add response time middleware
+ * add supertest/mocha test, move port value to configs
+ * add simple migrations
+ * back to normal jade views
+ * extract config
+
 0.0.3 / 2014-03-23
 ==================
 
