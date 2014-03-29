@@ -1,5 +1,7 @@
-var config = require('nconf');
+var config = require('config-node');
 
-module.exports = config.argv().env().file({
-    file: 'configs/' + process.env.NODE_ENV + '.json'
+module.exports = config({
+    dir: 'configs',
+    ext: 'json',
+    env: process.env.NODE_ENV || 'development'
 });

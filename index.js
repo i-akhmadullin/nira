@@ -11,7 +11,7 @@ var app = koa();
 app.use(responseTime());
 app.use(logger());
 app.use(serve(__dirname + '/static'));
-app.use(koaPg(config.get('db')));
+app.use(koaPg(config.db));
 app.use(route.get('/', list));
 
 function *list(){
@@ -20,7 +20,7 @@ function *list(){
     this.body = yield render('list', { tasks: tasks });
 }
 
-app.listen(config.get('port'));
-console.log('running on port', config.get('port'));
+app.listen(config.port);
+console.log('running on port', config.port);
 
 module.exports = app;
