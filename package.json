@@ -4,7 +4,10 @@
   "description": "node-based task manager",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha --harmony --watch --reporter spec"
+    "migrate:up": "migrate up",
+    "migrate:down": "migrate down",
+    "start": "nodemon --harmony index.js",
+    "test": "mocha --harmony --watch --reporter spec"
   },
   "author": "Ilya Akhmadullin",
   "license": "MIT",
