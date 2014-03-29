@@ -4,11 +4,13 @@ var logger = require('koa-logger');
 var route = require('koa-route');
 var koaPg = require('koa-pg');
 var responseTime = require('koa-response-time');
+var serve = require('koa-static');
 var koa = require('koa');
 var app = koa();
 
 app.use(responseTime());
 app.use(logger());
+app.use(serve(__dirname + '/static'));
 app.use(koaPg(config.get('db')));
 app.use(route.get('/', list));
 

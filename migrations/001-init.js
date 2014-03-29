@@ -7,9 +7,9 @@ CREATE TABLE tasks (
     name TEXT,
     text TEXT
 );
-INSERT INTO tasks (name, text) VALUES('task1', 'description');
-INSERT INTO tasks (name, text) VALUES('task2', 'description\nsomething');
-INSERT INTO tasks (name, text) VALUES('task3', 'task3 description description');
+INSERT INTO tasks (name, text) VALUES('Buy some milk', 'description');
+INSERT INTO tasks (name, text) VALUES('Wash dishes', 'description\nsomething');
+INSERT INTO tasks (name, text) VALUES('Walk the dog', 'task3 description description');
 */});
 var downQuery = 'DROP TABLE tasks';
 

@@ -2,10 +2,11 @@ doctype html
 html(lang="en")
   head
     title nira task todos
+    link(rel='stylesheet', href='style.css')
   body
-    h3 Welcome to Nira - node-based task manager
-    ul
+    h3.header Your tasks
+    ul.tasks
       each task, index in tasks
-        li
-          div= task.name
-          div= task.text
+        li.tasks__item
+          a(href='#').tasks__link #{task.name}
+          //- #{task.text}
