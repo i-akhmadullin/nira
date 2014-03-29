@@ -6,8 +6,8 @@ var koaPg = require('koa-pg');
 var koa = require('koa');
 var app = koa();
 
-app.use(koaPg(config.get('db')));
 app.use(logger());
+app.use(koaPg(config.get('db')));
 app.use(route.get('/', list));
 
 function *list(){
