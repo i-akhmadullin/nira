@@ -3,9 +3,11 @@ var config = require('./config');
 var logger = require('koa-logger');
 var route = require('koa-route');
 var koaPg = require('koa-pg');
+var responseTime = require('koa-response-time');
 var koa = require('koa');
 var app = koa();
 
+app.use(responseTime());
 app.use(logger());
 app.use(koaPg(config.get('db')));
 app.use(route.get('/', list));

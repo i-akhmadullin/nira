@@ -21,6 +21,7 @@
     "multiline": "~0.2.0",
     "pg-query": "~0.7.0",
     "supertest": "~0.10.0",
-    "mocha": "~1.18.2"
+    "mocha": "~1.18.2",
+    "koa-response-time": "~1.0.2"
   }
 }
