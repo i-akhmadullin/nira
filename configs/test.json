@@ -1,4 +1,4 @@
 {
 	"db": "postgres://postgres:postgres@localhost/nira",
-	"port": 3000
+	"port": 3001
 }

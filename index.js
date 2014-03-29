@@ -11,11 +11,12 @@ app.use(koaPg(config.get('db')));
 app.use(route.get('/', list));
 
 function *list(){
-    // Here we have access to this.pg which is client returned from pg.connect().
     var result = yield this.pg.db.client.query_('SELECT * from tasks')
     var tasks = result.rows;
     this.body = yield render('list', { tasks: tasks });
 }
 
-app.listen(3000);
-console.log('running on port 3000');
+app.listen(config.get('port'));
+console.log('running on port', config.get('port'));
+
+module.exports = app;

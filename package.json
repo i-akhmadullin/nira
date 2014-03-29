@@ -1,10 +1,10 @@
 {
   "name": "nira",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "node-based task manager",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "./node_modules/.bin/mocha --harmony --watch --reporter spec"
   },
   "author": "Ilya Akhmadullin",
   "license": "MIT",
@@ -19,6 +19,8 @@
     "koa-pg": "~0.23.0",
     "migrate": "~0.1.4",
     "multiline": "~0.2.0",
-    "pg-query": "~0.7.0"
+    "pg-query": "~0.7.0",
+    "supertest": "~0.10.0",
+    "mocha": "~1.18.2"
   }
 }
