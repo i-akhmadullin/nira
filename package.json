@@ -12,20 +12,23 @@
   "author": "Ilya Akhmadullin",
   "license": "MIT",
   "dependencies": {
+    "co-views": "~0.2.0",
+    "config-node": "~1.0.0",
+    "jade": "~1.3.0",
     "koa": "^0.5.1",
     "koa-logger": "^1.2.0",
-    "koa-route": "^1.1.1",
-    "co-views": "~0.2.0",
-    "jade": "~1.3.0",
-    "pg": "~2.11.1",
     "koa-pg": "~0.23.0",
+    "koa-response-time": "~1.0.2",
+    "koa-route": "^1.1.1",
+    "koa-static": "~1.4.3",
     "migrate": "~0.1.4",
     "multiline": "~0.2.0",
-    "pg-query": "~0.7.0",
-    "supertest": "~0.10.0",
+    "pg": "~2.11.1",
+    "pg-query": "~0.7.0"
+  },
+  "devDependencies": {
     "mocha": "~1.18.2",
-    "koa-response-time": "~1.0.2",
-    "koa-static": "~1.4.3",
-    "config-node": "~1.0.0"
+    "nodemon": "~1.0.17",
+    "supertest": "~0.10.0"
   }
 }
