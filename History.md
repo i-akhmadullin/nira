@@ -1,4 +1,13 @@
 
+0.0.5 / 2014-09-09
+==================
+
+ * fix nodemon watch config
+ * add simple db connection tests
+ * move test packages to devDependencies
+ * move from nconf to config-node
+ * add useful npm scripts, clean from useless stuff
+
 0.0.4 / 2014-03-29
 ==================
 
